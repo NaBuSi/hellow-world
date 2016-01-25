@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 2, 2016, 9:37:15 PM
+    Author     : Администратор
+*/
+
+html, body, main {
+    height: 100%;
+    width: 100%;
+}
+
+
+.widget-settings-pane, .widget-settings-shim {
+    transition-duration: 0.3s;
+}
+.widget-settings-pane {
+    position: absolute;
+    z-index: 1;
+    left: -340px;
+    width: 320px;
+    height: 100%;
+    background-color: white;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    box-shadow: 0 -1px 24px rgba(0,0,0,0.4);
+}
+
+.widget-settings-open {
+    -webkit-transform: translateX(340px);
+    transform: translateX(340px);
+}
